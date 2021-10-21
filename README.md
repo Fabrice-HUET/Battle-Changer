@@ -10,3 +10,5 @@
  Qu'ils soient frontaliers ou à l'autre bout du monde, notre Web App est un concentré de technologie et vous permet de faire un bond en avant de plusieurs siècles ! ( cartes précises, données en temps réel,...)
 
  Obtenez de précieuses informations sur votre entourage et devenez un dirigeant plus éclairé ! 
+
+!!! Pour voir l'ensemble des commits du projet, rendez-vous sur https://github.com/MaximeKirch/Worldcompany !!!
