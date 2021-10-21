@@ -1,38 +1,691 @@
-.App {
-  text-align: center;
-}
+/* Imports */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Variables */
+
+:root {
+
+  --primary-font: 'Playfair Display', serif;;
+  --secondary-font: 'Source Sans Pro', sans-serif;
+
+  
+  --background-color: rgba(51,51,51, 0,8);
+  --living-Coral: rgb(243,111,99);
+  --burnt-Henna: rgb(127,58,50);
+  --rose-Dawn: rgb(194,137,124);
+  --coral-Sands: rgb(239,172,135);
+  --sunkist-Coral: rgb(234,104,118);
+  --candlelight-Peach: rgb(248,162,157);
+  --sand: rgb(207,171,127);
+  --mellow-Buff: rgb(215,184,153);
   }
+
+  body{
+      background-color: var(--mellow-Buff);
+      color: var(--burnt-Henna);
+  }
+
+/* INDEX */ 
+
+/* 1. App */
+
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.centerContainer {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;  
+
+}
+
+
+/*-------------------------------------------------------*/
+/* N. Contact */
+
+.formContainer {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0px;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: -1;
+  
+}
+
+.formContainer > form {
+  width: 300px;
+  background: var(--coral-Sands);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.formContainer > label {
+  height: 30px;
+}
+
+
+
+#contact {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+}
+
+.formInfos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.formInfos > label{
+  font-family:var(--secondary-font);
+  font-size: 18px;
+  margin: 4px 0px;
+}
+
+.formInfos > input {
+  height: 20px;
+}
+
+#formBtn {
+  margin-top: 10px;
+  height: 30px;
+  width: auto;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  transition: all 0s;
+  background-color: var(--mellow-Buff);
+  border:2px solid var(--mellow-Buff);
+}
+
+#formBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(51, 51, 51, 0.7);
+  color: rgba(255,255,255);
+  border: none;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* N. Logo */
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background:var(--burnt-Henna)
+}
+
+.logoContainer > h1 {
+  font-family: var(--primary-font);
+  font-size: 48px;
+  color: var(--mellow-Buff);
+  margin-left: 10px;
+  
+}
+
+#logo{
+  height: 50px;
+  width: auto;
+  margin: 6px;
+  background: white;
+  border-radius: 25px;
+}
+
+.modal-toggle {
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin-left: 20px;
+ 
+}
+
+.modal-toggle > button {
+  height: 40px;
+  width: 100px;
+  background: var(--living-Coral);
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  border:none;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.modal-toggle > button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 0.9;
+}
+/* INDEX OF CSS FILE */ 
+
+/* 1. Root */
+/* 2. Palette */
+/* 3. NavBar */
+/* 4. Header */
+/* 5. Map */
+
+/* 1 Root*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 2 Palette*/
+.paletteContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+
+.paletteName{
+    color: white;
+    width: 70px;
+    height: 50px;
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+}
+
+#living-Coral{
+    background-color: var(--living-Coral);
+}
+
+#burnt-Henna{
+    background-color: var(--burnt-Henna);
+}
+
+#rose-Dawn{
+    background-color: var(--rose-Dawn);
+}
+
+#coral-Sands{
+    background-color: var(--coral-Sands);
+}
+
+#sunkist-Coral{
+    background-color: var(--sunkist-Coral);
+}
+
+#candlelight-Peach{
+    background-color: var(--candlelight-Peach);
+}
+
+#sand{
+    background-color: var(--sand);
+}
+
+#mellow-Buff{
+    background-color: var(--mellow-Buff);
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 3. NavBar */
+
+.navBar{
+    background-color: white;
+    border-bottom: solid 1px black;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    
+  }
+  
+  .navMenu {
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  
+  
+  #title {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 32px;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--background-color);
+  }
+  
+  
+  
+  #logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 2px;
+    margin-top: 15px;
+  }
+
+  #navBandeau{
+      margin-top: 0px !important;
+  }
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 4. Header */
+.HeaderContainer {
+    display: flex;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+  }
+  
+  
+  .HeaderTitle {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    color: var(--ultimate-Gray);
+    font-family: var(--primary-font);
+    font-size: 80px;
+  }
+  
+  .Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pHeader {
+  text-align: justify;
+  width: 80%;
+  font-family:var(--secondary-font);
+  font-weight: 400;
+  font-size: 21px;
+  
+  }
+  
+  #mHeader{
+      background-color:var(--light-illuminating);
+      color: var(--ultimate-Gray);
+      padding: 20px;
+  }
+  
+  #oklm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      justify-content: center;
+      text-align: center;
+  }
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 5. Map */
+
+#mapTitle {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    font-family: var(--primary-font);
+    font-size: 32px;
+    text-align: center;
+    background:var(--burnt-Henna);
+    color: var(--mellow-Buff);
+    align-content: center;
+    justify-content: center;
+  
+  }
+
+.backgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+  }
+  
+  #hero {
+    position: relative;
+    width: 70%;
+    max-width: auto;
+    max-height: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  #mapTitle {
+    width: 75%;
+    margin-left: 12%;
+  }
+  
+  
+  
+  
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 6. Testimonials Component */
+
+
+  .testimonialMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonialContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 0.5px solid var(--burnt-Henna);
+    border-bottom: 0.5px solid var(--burnt-Henna);
+    margin-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .testimonialText {
+    font: var(--secondary-font);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  
+
+  .profileTestimonial {
+    display: flex;
+    
+    align-items: center;
+    width: 500px;
+    height: auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    justify-content: center;
+    background: var(--mellow-Buff);
+  }
+
+  .profileTestimonial p {
+    color: var(--illuminating);
+    font-family: var(--secondary-font);
+    font-weight: 300;
+  }
+
+  #testimonialTitle {
+    width: 75%;
+    margin-left: 12%;
+    height: 80px;
+    margin-top: 20px;
+    font-family: var(--primary-font);
+    font-size: 32px;
+    text-align: center;
+    background:var(--burnt-Henna);
+    color: var(--mellow-Buff);
+    align-content: center;
+    justify-content: center;
+  
+  }
+
+  #avatar {
+    border-radius: 25px;
+    width: 50px;
+    height: auto;
+    
+  }
+
+  .vainqueur{
+    margin-left: 10px;
+    font-size: x-large;
+  }
+
+ 
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* 7. Civilization List component*/
+
+.infoContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.select{
+  background-color: var(--mellow-Buff);
+  color: var(--burnt-Henna);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+option{
+  color: var(--burnt-Henna);
 }
+
+.infoHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.infoHeader img {
+  width:50%;
+  height: 50%;
+}
+
+.infoHeader > h2 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+}
+
+.infoContent select {
+  width: 20%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-color: var(--burnt-Henna);
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+#battleScore {
+  font-size: 40px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.blockLeft {
+  margin-right: 20px;
+  border-right: 2px dashed var(--burnt-Henna);
+  padding: 15px;
+}
+
+.infoCenter{
+  margin-top:20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--burnt-Henna);
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px var(--burnt-Henna);
+  font-size: 1.5rem;
+}
+
+.infoSpec {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.infoSpec ul {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+/* -------------------------------------------------------------------------------------------------- */
+
+/* */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Bandeau */
+.bandeauHeader {
+    position: relative;
+    height: 300px;
+    background-image: linear-gradient(#7F3A32,#CFAB7F );
+    margin-top: 50px;
+  }
+  
+  .bandeauH1 {
+    padding: 100px 0;
+    font-family: var(--primary-font);
+    text-align: center;
+    font-size: xxx-large;
+    color: var(--mellow-Buff);
+  }
+
+  .bandeau > h2 {
+    font-size: 42px;
+  }
+  
+    
+  Svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Z.Footer */
+.footerContainer{
+    display :flex;
+    justify-content: center;
+    bottom: 0;
+    margin-top: 25px;
+    
+  }
+  
+  .footerRow{
+    display :flex;
+    justify-content: space-around ;  
+    width: 50%;
+  }
+  
+  .footerMain{
+    background-color: var(--burnt-Henna);
+    width: 100%;
+    color: var(--mellow-Buff);
+    margin-top: 50px;
+  }
+
+
+  
+  
+  .footerNoRow{
+    justify-content: center;
+    padding : 20px;
+    }
+  
+  .lastFooter{
+    text-align: center;
+    
+  }
+  
+  .footerList{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    font-family: var(--primary-font);
+
+  }
+  
+  .col{
+    margin: 20px;
+  }
+  
+  .hrFooter{
+    border :0;
+    height: 1px;
+  background-color : var(--illuminating);
+  }
+  
+  i{
+    background-color : var(--illuminating);
+  }
+  
+    
+  .footerList{
+    line-height: 2;
+    font-family: var(--secondary-font);
+  }
+  
+  .h3Footer{
+    font-family: var (--primary-font);
+    text-align: center;
+  }
+  
+  /* -------------------------------------------------------------------------------------------------- */
